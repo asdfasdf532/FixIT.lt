@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FixIT.lt — Kompiuterių servisas ir parduotuvė</title>
+<meta name="description" content="FixIT.lt — kompiuterių remontas, diagnostika, PC surinkimas ir elektroninė parduotuvė. Greitai, patikimai, su garantija.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><rect width=%2224%22 height=%2224%22 rx=%226%22 fill=%22%23c9793f%22/><text x=%2212%22 y=%2217%22 font-size=%2214%22 text-anchor=%22middle%22 fill=%22%2312151b%22 font-family=%22monospace%22>F</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ========== NAV ========== -->
+<header class="nav">
+  <div class="container">
+    <a href="index.html" class="logo">Fix<span class="dot">IT</span>.lt<span class="cursor"></span></a>
+    <nav class="nav-links">
+      <a href="index.html" data-page="index.html" class="active">Pradžia</a>
+      <a href="parduotuve.html" data-page="parduotuve.html">Parduotuvė</a>
+      <a href="paslaugos.html" data-page="paslaugos.html">Paslaugos ir kainos</a>
+      <a href="remontas.html" data-page="remontas.html">Remontas</a>
+      <a href="kontaktai.html" data-page="kontaktai.html">Kontaktai</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="parduotuve.html" class="nav-cart" aria-label="Krepšelis">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span class="cart-count">0</span>
+      </a>
+      <a href="remontas.html" class="btn btn-primary btn-sm">Užsakyti remontą</a>
+      <button class="burger" aria-label="Meniu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <svg class="circuit-bg" viewBox="0 0 500 600" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 40 H180 V140 H340 V60 H480"/>
+    <path d="M60 200 H240 V320 H420 V260"/>
+    <path d="M10 400 H160 V480 H300 V560 H460"/>
+    <circle cx="180" cy="140" r="4"/>
+    <circle cx="340" cy="60" r="4"/>
+    <circle cx="240" cy="320" r="4"/>
+    <circle cx="160" cy="480" r="4"/>
+    <circle cx="300" cy="560" r="4"/>
+  </svg>
+  <div class="container">
+    <div>
+      <div class="boot-line"><span class="typed-text"></span><span class="typed-cursor"></span></div>
+      <h1>Kompiuteris sulūžo?<br><span>Sudiagnozuosime</span> ir sutvarkysime.</h1>
+      <p class="lead">FixIT.lt — kompiuterių remontas, diagnostika, PC surinkimas ir dalių parduotuvė vienoje vietoje. Aiški kaina, greitas atsakymas, garantija darbams.</p>
+      <div class="hero-actions">
+        <a href="remontas.html" class="btn btn-primary">Užsakyti remontą</a>
+        <a href="parduotuve.html" class="btn btn-ghost">Peržiūrėti parduotuvę</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="num">7+</div><div class="lbl">metų patirtis</div></div>
+        <div><div class="num">2400+</div><div class="lbl">suremontuotų įrenginių</div></div>
+        <div><div class="num">&lt; 24 val.</div><div class="lbl">vidutinis atsakymas</div></div>
+      </div>
+    </div>
+
+    <div class="diag-panel">
+      <div class="diag-head">
+        <div class="dots"><span></span><span></span><span></span></div>
+        <div class="diag-title">SYSTEM_DIAGNOSTICS.EXE</div>
+        <div class="diag-status">VEIKIA</div>
+      </div>
+
+      <div class="diag-row">
+        <div class="row-top"><span>Procesorius (CPU)</span><b>OK</b></div>
+        <div class="bar" style="--target:92%"><i></i></div>
+      </div>
+      <div class="diag-row">
+        <div class="row-top"><span>Atmintis (RAM)</span><b>OK</b></div>
+        <div class="bar" style="--target:78%"><i></i></div>
+      </div>
+      <div class="diag-row">
+        <div class="row-top"><span>Diskas (SSD)</span><b>OK</b></div>
+        <div class="bar" style="--target:86%"><i></i></div>
+      </div>
+      <div class="diag-row">
+        <div class="row-top"><span>Aušinimas</span><b>OK</b></div>
+        <div class="bar" style="--target:64%"><i></i></div>
+      </div>
+
+      <div class="diag-log">
+        &gt; patikrinta komponentų: 14/14 <span class="ok">[OK]</span><br>
+        &gt; virusų nerasta <span class="ok">[OK]</span><br>
+        &gt; sistema paruošta darbui <span class="ok">[OK]</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TRUST STRIP ========== -->
+<div class="trust">
+  <div class="container">
+    <div class="trust-item"><b>Nemokama</b>&nbsp;diagnostika daliai atvejų</div>
+    <div class="trust-item"><b>1–3 d.</b>&nbsp;vidutinė remonto trukmė</div>
+    <div class="trust-item"><b>Garantija</b>&nbsp;visiems atliktiems darbams</div>
+    <div class="trust-item"><b>AI pagalba</b>&nbsp;24/7 dažniausiems klausimams</div>
+  </div>
+</div>
+
+<!-- ========== SERVICES ========== -->
+<section id="paslaugos">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Paslaugos</div>
+      <h2>Viskas, ko reikia jūsų kompiuteriui</h2>
+      <p>Nuo greitos diagnostikos iki pilno kompiuterio surinkimo — dirbame su namų ir verslo klientais.</p>
+    </div>
+
+    <div class="grid-3 stagger">
+      <div class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="10" cy="10" r="6"/><path d="M20 20l-5.5-5.5"/><path d="M10 7v6M7 10h6"/></svg></div>
+        <h3>Diagnostika</h3>
+        <p>Tiksliai nustatome gedimo priežastį prieš pradedant bet kokį remontą — be paslėptų kaštų.</p>
+        <div class="tag-list"><span>Nemokama dažniems atvejams</span></div>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14.7 6.3a4 4 0 1 0-5.4 5.4L2 19l3 3 7.3-7.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2-2 2.5-2.5z"/></svg></div>
+        <h3>Kompiuterių remontas</h3>
+        <p>Stacionarių ir nešiojamų kompiuterių remontas: komponentų keitimas, aušinimas, maitinimo blokai.</p>
+        <div class="tag-list"><span>PC</span><span>Laptop</span></div>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <h3>Programinė įranga</h3>
+        <p>Windows diegimas, tvarkyklės, virusų šalinimas, sistemos pagreitinimas ir optimizavimas.</p>
+        <div class="tag-list"><span>Windows</span><span>Antivirusai</span></div>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></svg></div>
+        <h3>PC surinkimas</h3>
+        <p>Surenkame kompiuterius pagal jūsų biudžetą ir poreikius — nuo darbo iki žaidimų stočių.</p>
+        <div class="tag-list"><span>Gaming</span><span>Darbo PC</span></div>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12.5a7 7 0 0 1 14 0"/><path d="M2 9a10 10 0 0 1 20 0"/><circle cx="12" cy="16" r="2"/></svg></div>
+        <h3>Tinklai ir internetas</h3>
+        <p>WiFi įrengimas, maršrutizatorių konfigūravimas, namų ir biuro tinklo sukūrimas.</p>
+        <div class="tag-list"><span>WiFi</span><span>LAN</span></div>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/></svg></div>
+        <h3>Sprendimai verslui</h3>
+        <p>Įmonių kompiuterių ir serverių priežiūra, darbo vietų paruošimas, nuotolinė pagalba.</p>
+        <div class="tag-list"><span>Verslo klientai</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PROCESS ========== -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Eiga</div>
+      <h2>Kaip vyksta remontas</h2>
+      <p>Keturi paprasti žingsniai nuo užsakymo iki atsiėmimo.</p>
+    </div>
+    <div class="process">
+      <div class="process-line reveal"><i></i></div>
+      <div class="process-grid">
+        <div class="process-step reveal">
+          <div class="step-num">01</div>
+          <h4>Užsakymas</h4>
+          <p>Užpildote formą arba parašote — trumpai aprašote problemą.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-num">02</div>
+          <h4>Diagnostika</h4>
+          <p>Nustatome gedimą ir pateikiame aiškią kainą prieš darbų pradžią.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-num">03</div>
+          <h4>Remontas</h4>
+          <p>Atliekame darbus naudodami kokybiškas dalis ir informuojame apie eigą.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-num">04</div>
+          <h4>Atsiėmimas</h4>
+          <p>Patikrinate rezultatą, gaunate garantiją ir atsiimate įrenginį.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== BUILDS TEASER ========== -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Parduotuvė</div>
+      <h2>Kompiuteriai pagal poreikį</h2>
+      <p>Du populiariausi konfigūracijų tipai — arba surinksime individualiai pagal jūsų biudžetą.</p>
+    </div>
+    <div class="grid-2 stagger">
+      <div class="build-card reveal">
+        <span class="badge">Gaming</span>
+        <h3>Žaidimų kompiuteris</h3>
+        <p>Optimizuotas sklandžiam žaidimui aukštais nustatymais ir geram FPS.</p>
+        <div class="spec-list">
+          <div><span>Procesorius</span><b>Vidutinės-aukštos klasės</b></div>
+          <div><span>Vaizdo plokštė</span><b>Skirta žaidimams</b></div>
+          <div><span>Atmintis</span><b>16–32 GB RAM</b></div>
+          <div><span>Diskas</span><b>NVMe SSD</b></div>
+        </div>
+        <div class="build-price">nuo 899 € <small>/ komplektacija priklauso nuo dalių</small></div>
+        <a href="parduotuve.html" class="btn btn-ghost btn-block">Žiūrėti parduotuvėje</a>
+      </div>
+      <div class="build-card reveal">
+        <span class="badge">Darbui</span>
+        <h3>Darbo / biuro kompiuteris</h3>
+        <p>Tylus, patikimas ir greitas kasdieniam darbui bei daugiafunkciam naudojimui.</p>
+        <div class="spec-list">
+          <div><span>Procesorius</span><b>Efektyvus, tylus</b></div>
+          <div><span>Atmintis</span><b>8–16 GB RAM</b></div>
+          <div><span>Diskas</span><b>SSD</b></div>
+          <div><span>Papildomai</span><b>Office paruošimas</b></div>
+        </div>
+        <div class="build-price">nuo 449 € <small>/ komplektacija priklauso nuo dalių</small></div>
+        <a href="parduotuve.html" class="btn btn-ghost btn-block">Žiūrėti parduotuvėje</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== AI ASSISTANT ========== -->
+<section>
+  <div class="container">
+    <div class="ai-block reveal">
+      <div class="ai-copy">
+        <div class="eyebrow">AI pagalba</div>
+        <h2>Klauskite bet kada — atsakysime iš karto</h2>
+        <p style="color:var(--slate);margin-top:14px">Mūsų svetainės asistentas padeda greitai atsakyti į dažniausius klausimus apie kainas, terminus ir paslaugas. Sudėtingesniais atvejais nukreipsime tiesiai pas meistrą.</p>
+        <ul>
+          <li>Atsako į dažnus klausimus 24/7</li>
+          <li>Padeda pasirinkti tinkamą kompiuterį</li>
+          <li>Paaiškina remonto eigą ir orientacines kainas</li>
+          <li>Nukreipia į užsakymo formą, kai reikia meistro</li>
+        </ul>
+      </div>
+      <div class="chat-box">
+        <div class="chat-log">
+          <div class="chat-msg bot">Sveiki! Aš — FixIT.lt asistentas. Kuo galiu padėti? 🙂</div>
+        </div>
+        <div class="chat-quick">
+          <button type="button">Kiek kainuoja remontas?</button>
+          <button type="button">Kiek laiko trunka?</button>
+          <button type="button">Ar taisote laptopus?</button>
+        </div>
+        <div class="chat-input">
+          <input type="text" placeholder="Rašykite klausimą...">
+          <button type="button" aria-label="Siųsti">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TESTIMONIALS ========== -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Atsiliepimai</div>
+      <h2>Ką sako klientai</h2>
+    </div>
+    <div class="grid-3 stagger">
+      <div class="quote-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>„Kompiuteris visai neįsijungdavo — sutvarkė per dieną ir paaiškino, kas buvo negerai. Kaina atitiko tai, kas buvo sutarta iš anksto.“</p>
+        <div class="who"><div class="avatar">RJ</div><div><div class="name">R. J.</div><div class="role">Namų klientas</div></div></div>
+      </div>
+      <div class="quote-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>„Surinko žaidimų kompiuterį pagal mano biudžetą — viskas suderinta, dirba stabiliai jau kelis mėnesius.“</p>
+        <div class="who"><div class="avatar">TM</div><div><div class="name">T. M.</div><div class="role">Gaming klientas</div></div></div>
+      </div>
+      <div class="quote-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>„Prižiūri visų mūsų biuro kompiuterių parką. Greitai reaguoja, kai kyla problemų — labai patogu turėti vieną kontaktą.“</p>
+        <div class="who"><div class="avatar">UAB</div><div><div class="name">Įmonės klientas</div><div class="role">Verslo aptarnavimas</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
+<section>
+  <div class="container">
+    <div class="cta-band reveal">
+      <h2>Kompiuteris stringa arba visai neįsijungia?</h2>
+      <p>Pateikite užklausą — susisieksime per 24 val. ir pasakysime, kas negerai.</p>
+      <div class="actions">
+        <a href="remontas.html" class="btn btn-primary">Užsakyti remontą</a>
+        <a href="kontaktai.html" class="btn btn-ghost">Susisiekti</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo">Fix<span class="dot">IT</span>.lt</a>
+        <p style="margin-top:16px">Kompiuterių servisas, diagnostika, PC surinkimas ir elektroninė parduotuvė. Dirbame su namų ir verslo klientais.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h5>Naršymas</h5>
+        <ul>
+          <li><a href="parduotuve.html">Parduotuvė</a></li>
+          <li><a href="paslaugos.html">Paslaugos ir kainos</a></li>
+          <li><a href="remontas.html">Remonto užsakymas</a></li>
+          <li><a href="kontaktai.html">Kontaktai</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Paslaugos</h5>
+        <ul>
+          <li><a href="paslaugos.html">Diagnostika</a></li>
+          <li><a href="paslaugos.html">Kompiuterių remontas</a></li>
+          <li><a href="paslaugos.html">PC surinkimas</a></li>
+          <li><a href="paslaugos.html">Sprendimai verslui</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Kontaktai</h5>
+        <ul>
+          <li>+370 600 00000</li>
+          <li>info@fixit.lt</li>
+          <li>Klaipėda, Lietuva</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 FixIT.lt. Visos teisės saugomos.</span>
+      <span>Sukurta su rūpesčiu jūsų kompiuteriui.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast"></div>
+<script src="js/script.js"></script>
+</body>
+</html>
